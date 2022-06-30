@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import './App.css';
-import { ChakraProvider, useDisclosure, Skeleton, Button, FormControl, FormLabel, Input, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Heading } from '@chakra-ui/react'
+import { ChakraProvider, Text, useDisclosure, Box, Grid, GridItem, Stack, Skeleton, Button, FormControl, FormLabel, Input, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Heading } from '@chakra-ui/react'
 
 const Navigator = () => {
   return <div>
-    The Navigation Header for the system
+    <Box>
+      <Skeleton m={5} height="2rem" />
+    </Box>
   </div>
 }
 
@@ -14,8 +16,35 @@ const Fold = () => {
   const [subtitle, setSubtitle] = useState("subtitle of the application, How we deliver gooal in headline, not more than 3 lines")
 
   return <div>
-    <h1>{headline}</h1>
-    <p>{subtitle}</p>
+    <Text bgGradient="linear(to-l, #7928CA, #FF0080)" bgClip="text" fontWeight="bold" fontSize="6xl">{headline}</Text>
+    <Box>
+      <Grid gap={2} borderRadius={2} templateColumns="repeat(4, 1fr)" m={2}>
+        <GridItem colSpan={1}>
+          <Stack >
+            <Skeleton height="200px" />
+          </Stack>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <Stack >
+            <Skeleton height="200px" />
+          </Stack>
+        </GridItem>
+        <GridItem colSpan={2}>
+          <Stack >
+            <Skeleton height="200px" />
+          </Stack>
+        </GridItem>
+      </Grid>
+      <Stack>
+        <Skeleton height="30px" />
+        <Skeleton height="30px" />
+      </Stack>
+    </Box>
+    <Box >
+      <p>{subtitle}</p>
+      <Skeleton height="12px" />
+      <Skeleton height="12px" />
+    </Box>
     <br />
     <p>The Call To Action Buttons Group</p>
   </div>
@@ -24,6 +53,7 @@ const Fold = () => {
 const OurServices = () => {
   return <div>
     <Heading>Our Services To The Society For development</Heading>
+
     <p>The List and Point for Services To The Society</p>
     <br />
     <Skeleton height='40px' />
@@ -83,7 +113,6 @@ const PageFooter = () => {
 
 function InitialFocus() {
   const { isOpen, onOpen, onClose } = useDisclosure()
-
   const initialRef = React.useRef(null)
   const finalRef = React.useRef(null)
 
