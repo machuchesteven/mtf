@@ -130,12 +130,15 @@ const OurTeam = () => {
 }
 
 const Impact = () => {
-  return <div>
+  return <Box><div>
+
     <Heading>Impact To The Society</Heading>
     <p>This is some of the people who have been impacted but our work</p>
     <p>Use the slider To show people impacted with their Testimonials</p>
   </div>
+  </Box>
 }
+
 
 const FounderNote = () => {
   <div>
