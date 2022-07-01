@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
-import { ChakraProvider, Text, Center, useDisclosure, Box, Grid, GridItem, Stack, Skeleton, Button, FormControl, FormLabel, Input, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Heading } from '@chakra-ui/react'
+import { ChakraProvider, Text, SkeletonText, Center, useDisclosure, Box, Grid, GridItem, Stack, Skeleton, Button, FormControl, FormLabel, Input, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Heading, SkeletonCircle } from '@chakra-ui/react'
 
 const Navigator = () => {
   return <div>
@@ -104,8 +104,28 @@ const Upcoming = () => {
 
 const OurTeam = () => {
   return <div>
-    <Heading>Meet Our Active Team</Heading>
-    <p>This explains Our Team with Their Different Roles to The Society</p>
+    <Box borderWidth={1} borderRadius="md" m={5} p={2}>
+      <Box>
+        <Heading as="h4">Meet Our Active Team</Heading>
+      </Box>
+      <Text fontWeight="bold" mb={5}>This explains Our Team with Their Different Roles to The Society</Text>
+      <hr maxWidth="95%" ma={5} />
+      <Grid templateColumns="repeat(3, 1fr)" gap="2" m={2}>
+        <GridItem colSpan={1}>
+          <Stack>
+            <SkeletonCircle size="200px" m="auto" />
+          </Stack>
+        </GridItem>
+        <GridItem colSpan={2}>
+          <Box>
+            <Center><Heading as="h5">Dr. Colman T. Msoka</Heading></Center>
+            <Box>
+              <SkeletonText mt="5" noOfLines={5} spacing={4} />
+            </Box>
+          </Box>
+        </GridItem>
+      </Grid>
+    </Box>
   </div>
 }
 
