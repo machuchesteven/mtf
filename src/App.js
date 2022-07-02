@@ -131,10 +131,37 @@ const OurTeam = () => {
 
 const Impact = () => {
   return <Box><div>
-
     <Heading>Impact To The Society</Heading>
     <p>This is some of the people who have been impacted but our work</p>
-    <p>Use the slider To show people impacted with their Testimonials</p>
+    <Grid templateColumns="repeat(3, 1fr)" gap="2px">
+      <GridItem colSpan={1} m="2" p="2">
+        <Box><Skeleton height="150px" borderRadius="md" borderWidth="1px" /></Box>
+        <Heading as="h5">
+          Developement Masterclasses
+        </Heading>
+        <Text>Done On: 17th Jan 2022, 07:00PM</Text>
+        <SkeletonText noOfLines="4" mt="4" gap="2" />
+        <Center><Button>See Event</Button></Center>
+      </GridItem>
+      <GridItem colSpan={1} m="2" p="2">
+        <Box><Skeleton height="150px" borderRadius="md" borderWidth="1px" /></Box>
+        <Heading as="h5">
+          Self Employement And Business Seminars
+        </Heading>
+        <Text>Done On: 17th Jan 2022, 07:00PM</Text>
+        <SkeletonText noOfLines="4" mt="4" gap="2" />
+        <Center><Button>See Event</Button></Center>
+      </GridItem>
+      <GridItem colSpan={1} m="2" p="2">
+        <Box><Skeleton height="150px" borderRadius="md" borderWidth="1px" /></Box>
+        <Heading as="h5">
+          Innterview Skills Classes
+        </Heading>
+        <Text>Done On: 17th Jan 2022, 07:00PM</Text>
+        <SkeletonText noOfLines="4" mt="4" gap="2" />
+        <Center><Button>See Event</Button></Center>
+      </GridItem>
+    </Grid>
   </div>
   </Box>
 }
