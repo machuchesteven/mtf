@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+#  Maendeleo Talk Forum Website Under Development
+
+Maendeleo Talk Forum is a Forum Based Under the university of Dar es Salaam, UDSM
+The main Forum goal is  creating a space for people to talk about development and share tools for them to develop and aknowledge their skills under the current fast changing world
+
+
+## Services provided by The Maendelep Talk Forum
+1. Basic View of Development Policy
+2. Youths role towards Development
+3. The complete picture of African Development
+4. Providuing chances and exposure for students and non-students 
+5. Internship programs and trainings
+6. Job markets overview and tools using like ajiraportal and linkedin
+
+
+### you can visit (https://www.maendeleo.com/talkforum) to see the forum
+
+
+ Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
